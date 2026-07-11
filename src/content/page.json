@@ -1,0 +1,331 @@
+{
+  "root": {
+    "props": {
+      "title": "Precision Recovery and Wellness"
+    }
+  },
+  "content": [
+    {
+      "type": "Navigation",
+      "props": {
+        "id": "navigation",
+        "visible": true,
+        "brandName": "Your Practice",
+        "links": [
+          {
+            "label": "IV Therapy",
+            "href": "#iv-therapy"
+          },
+          {
+            "label": "PRP",
+            "href": "#prp"
+          },
+          {
+            "label": "Advanced Care",
+            "href": "#advanced-care"
+          },
+          {
+            "label": "Clinical Guidance",
+            "href": "#clinical-guidance"
+          }
+        ],
+        "ctaLabel": "Book a consultation",
+        "ctaHref": "#book"
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "id": "hero",
+        "visible": true,
+        "eyebrow": "Physician-directed wellness",
+        "headlineStart": "Precision care for",
+        "headlineEnd": "how you recover.",
+        "description": "Personalized IV therapy, injections, and regenerative care selected around your history, goals, and current needs.",
+        "primaryLabel": "Book a consultation",
+        "primaryHref": "#book",
+        "secondaryLabel": "Explore treatments",
+        "secondaryHref": "#services",
+        "imageUrl": "https://images.pexels.com/photos/3952241/pexels-photo-3952241.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "imageAlt": "A gloved clinician preparing a treatment vial"
+      }
+    },
+    {
+      "type": "Marquee",
+      "props": {
+        "id": "marquee",
+        "visible": true,
+        "items": [
+          {
+            "label": "IV Therapy"
+          },
+          {
+            "label": "PRP"
+          },
+          {
+            "label": "Injections"
+          },
+          {
+            "label": "Advanced Care"
+          },
+          {
+            "label": "Personalized Protocols"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ServiceOverview",
+      "props": {
+        "id": "service-overview",
+        "visible": true,
+        "heading": "Care that meets you where you are.",
+        "intro": "Explore hydration, nutrient support, and regenerative protocols organized around clear goals and appropriate clinical assessment.",
+        "cards": [
+          {
+            "title": "Core IV Therapy",
+            "description": "Hydration and nutrient-support protocols for travel, demanding schedules, exercise, and general wellness.",
+            "count": "9 treatments",
+            "href": "#iv-therapy",
+            "tone": "dark"
+          },
+          {
+            "title": "PRP Regenerative Therapy",
+            "description": "Customized platelet-rich plasma care for joints, soft tissue, hair, skin, and selected healing applications.",
+            "count": "6 protocols",
+            "href": "#prp",
+            "tone": "steel"
+          },
+          {
+            "title": "Advanced IV Treatments",
+            "description": "Specialized physician-directed options with treatment-specific screening and monitoring.",
+            "count": "4 treatments",
+            "href": "#advanced-care",
+            "tone": "light"
+          },
+          {
+            "title": "Injections and Support",
+            "description": "Focused nutrient injections and clinician-directed medication support when appropriate.",
+            "count": "5 options",
+            "href": "#advanced-care",
+            "tone": "accent"
+          },
+          {
+            "title": "Prolozone Therapy",
+            "description": "An advanced, individualized option within a broader musculoskeletal and regenerative plan.",
+            "count": "1 protocol",
+            "href": "#advanced-care",
+            "tone": "dark"
+          }
+        ]
+      }
+    },
+    {
+      "type": "IvAccordion",
+      "props": {
+        "id": "iv-accordion",
+        "visible": true,
+        "heading": "A considered IV menu.",
+        "intro": "Each infusion begins with appropriate screening. Formulations are selected by the clinical team rather than treated as one-size-fits-all products.",
+        "services": [
+          {
+            "title": "Pure Hydration",
+            "description": "A foundational fluid-replacement treatment for clients seeking hydration after travel, heat exposure, exercise, long workdays, or reduced oral intake.",
+            "benefits": "Supports hydration and fluid balance\nReplenishes fluids after heat or exercise\nSupports recovery after travel\nProvides a foundation for clinician-selected electrolytes"
+          },
+          {
+            "title": "Energy and Vitality",
+            "description": "A physician-directed infusion that may combine fluids with clinically appropriate B vitamins, amino acids, minerals, or other nutrients.",
+            "benefits": "Supports normal energy metabolism\nProvides nutrient replenishment during demanding schedules\nSupports mental and physical vitality\nCan be customized to individual needs"
+          },
+          {
+            "title": "Sports Recovery",
+            "description": "A performance-focused hydration and electrolyte protocol for active individuals following demanding training or physical activity.",
+            "benefits": "Supports rehydration after exercise\nReplenishes electrolytes lost through sweating\nSupports muscle and post-workout recovery\nComplements individualized performance goals"
+          },
+          {
+            "title": "Immune Support",
+            "description": "A nutrient-based infusion designed to support normal immune function, hydration, and resilience during seasonal, travel, or high-demand periods.",
+            "benefits": "Supports normal immune function\nProvides hydration during periods of physical stress\nOffers clinician-selected vitamin and mineral support\nFits seasonal and travel wellness planning"
+          },
+          {
+            "title": "Wellness and Recovery",
+            "description": "A flexible clinician-guided infusion for broad hydration, nutrient replenishment, antioxidant support, and recovery goals.",
+            "benefits": "Supports general wellness and hydration\nReplenishes nutrients after demanding schedules\nProvides antioxidant support\nAllows individualized formulation"
+          },
+          {
+            "title": "Reset IV",
+            "description": "A hydration and nutrient-support protocol for recovery after travel, social events, or demanding schedules. It does not claim to remove toxins or cleanse organs.",
+            "benefits": "Supports hydration and replenishment\nProvides antioxidant support\nSupports normal metabolic wellness\nComplements a clinician-guided recovery plan"
+          },
+          {
+            "title": "Myers’ Cocktail",
+            "description": "A commonly requested wellness infusion that may include B vitamins, vitamin C, magnesium, and calcium when clinically appropriate.",
+            "benefits": "Supports hydration and nutrient replenishment\nProvides a broad wellness formulation\nCan be adjusted through clinical review\nUses provider-selected ingredients and dosing"
+          },
+          {
+            "title": "Beauty and Glutathione",
+            "description": "A cosmetic-wellness infusion centered on antioxidant support and clinician-selected ingredients such as vitamin C or glutathione.",
+            "benefits": "Provides antioxidant support\nComplements skin-focused wellness goals\nSupports general nutrient replenishment\nMay be offered as an infusion or governed add-on"
+          },
+          {
+            "title": "NAD+",
+            "description": "A premium, appointment-blocked infusion offered within a clinician-directed wellness program. NAD+ typically requires more chair time than standard hydration.",
+            "benefits": "Uses individualized dosing and infusion pacing\nRequires appropriate screening and monitoring\nFits selected metabolic and recovery programs\nScheduled around longer treatment time"
+          }
+        ]
+      }
+    },
+    {
+      "type": "PrpChapter",
+      "props": {
+        "id": "prp-chapter",
+        "visible": true,
+        "heading": "Regenerative care, directed with precision.",
+        "intro": "PRP uses a concentrated preparation derived from your own blood. Each plan is tailored to your anatomy, condition, health history, and treatment goals.",
+        "imageUrl": "https://images.pexels.com/photos/31466279/pexels-photo-31466279.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "imageAlt": "Clinician preparing a personalized regenerative treatment",
+        "services": [
+          {
+            "title": "Joint and Mobility Therapy",
+            "description": "Targeted PRP care for selected knee, shoulder, rotator cuff, tendon, ligament, muscle, and activity-related concerns.",
+            "benefits": "Supports connective-tissue recovery\nComplements mobility and functional-movement goals\nMay support recovery from overuse or selected strains\nCan address sports and activity-related treatment goals"
+          },
+          {
+            "title": "Soft Tissue Restoration",
+            "description": "A focused regenerative protocol for compromised or overworked muscles, fascia, tendons, and other soft-tissue structures.",
+            "benefits": "Supports natural soft-tissue healing\nComplements recovery from repetitive use\nSupports tissue strength and resilience\nFits personalized return-to-activity planning"
+          },
+          {
+            "title": "Hair Restoration",
+            "description": "Scalp PRP for eligible men and women seeking support for hair density, thickness, and overall hair quality in areas affected by pattern thinning.",
+            "benefits": "Supports the scalp and follicular environment\nSupports healthier-looking hair density\nComplements circulation and tissue-health goals\nUses a plan tailored to the pattern and stage of thinning"
+          },
+          {
+            "title": "Skin Rejuvenation and Scar Refinement",
+            "description": "PRP may be used alone or alongside treatments such as microneedling to support skin remodeling, texture, tone, and selected scar concerns.",
+            "benefits": "Supports collagen and dermal remodeling\nComplements texture and tone improvement\nMay soften the appearance of acne and selected surgical scars\nSupports skin resilience and a refreshed appearance"
+          },
+          {
+            "title": "Healing Support",
+            "description": "PRP may complement selected post-procedure, orthopedic, dental, oral-surgery, or wound-care plans when clinically appropriate.",
+            "benefits": "Supports tissue recovery after selected procedures\nMay complement dental implants, grafting, extractions, and periodontal care\nCan be incorporated into a broader wound-care plan\nRequires condition-specific clinical evaluation"
+          },
+          {
+            "title": "Signature Customized PRP Protocol",
+            "description": "A concierge-level plan integrating PRP with a broader soft-tissue, recovery, aesthetic, or performance strategy.",
+            "benefits": "Uses individualized physician-led planning\nCan address multiple compatible goals\nIntegrates with appropriate recovery and wellness protocols\nSupports long-term structural-health planning"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CareStatement",
+      "props": {
+        "id": "care-statement",
+        "visible": true,
+        "statement": "The strongest protocol is not the most complicated one. It is the one selected for your history, goals, anatomy, and current needs."
+      }
+    },
+    {
+      "type": "AdvancedCare",
+      "props": {
+        "id": "advanced-care-catalog",
+        "visible": true,
+        "heading": "Advanced options. Clear clinical guardrails.",
+        "intro": "Specialized services require individual assessment, treatment-specific screening, and provider direction.",
+        "advancedServices": [
+          {
+            "title": "High-Dose Vitamin C",
+            "description": "A clinician-directed intravenous vitamin C protocol personalized to medical history, treatment goals, and clinically indicated laboratory review.",
+            "benefits": "Provides advanced antioxidant support\nSupports selected immune-wellness plans\nRequires screening for factors such as G6PD deficiency and kidney-related risk\nUses individualized dosing and monitoring"
+          },
+          {
+            "title": "IV Iron",
+            "description": "A physician-directed treatment for eligible patients with documented iron deficiency or iron-deficiency anemia.",
+            "benefits": "Replenishes iron when clinically indicated\nSupports healthy red-blood-cell production\nMay be considered when oral iron is not tolerated or sufficient\nRequires laboratory review, dosing, and follow-up"
+          },
+          {
+            "title": "Methylene Blue",
+            "description": "A specialized option offered only through a physician-directed protocol for appropriately screened patients.",
+            "benefits": "Fits selected advanced wellness programs\nRequires medication and interaction review\nUses individualized treatment planning\nIs administered with clinical supervision"
+          },
+          {
+            "title": "Anti-Inflammatory Support",
+            "description": "A customized nutrient and hydration infusion designed to support recovery, antioxidant status, and overall wellness.",
+            "benefits": "Supports recovery after physical exertion\nProvides antioxidant and hydration support\nComplements resilience and wellness goals\nUses a clinician-selected formulation"
+          }
+        ],
+        "injectionServices": [
+          {
+            "title": "Vitamin B12 Injection",
+            "description": "A focused nutrient injection included in clinically appropriate nutritional-wellness plans.",
+            "benefits": "Supports normal energy metabolism\nSupports healthy nervous-system function\nSupports red-blood-cell production\nProvides convenient targeted nutrient support"
+          },
+          {
+            "title": "Vitamin D Injection",
+            "description": "A clinician-directed option for patients with an appropriate vitamin D need.",
+            "benefits": "Supports bone health\nSupports normal immune function\nSupports muscle function\nRequires assessment of individual need"
+          },
+          {
+            "title": "Immune Support Injection",
+            "description": "A targeted nutrient option for seasonal, travel, or high-demand wellness planning.",
+            "benefits": "Supports general immune wellness\nProvides targeted nutrient replenishment\nOffers a convenient alternative to an infusion\nComplements clinician-guided wellness planning"
+          },
+          {
+            "title": "Detox and Wellness Injection",
+            "description": "A targeted injection designed to complement hydration, recovery, antioxidant, and general wellness plans without claiming to remove toxins.",
+            "benefits": "Supports general wellness\nProvides antioxidant support\nComplements hydration and recovery protocols\nUses clinician-selected ingredients"
+          },
+          {
+            "title": "Ondansetron Nausea Support",
+            "description": "A prescription medication provided only following medical assessment and provider order when nausea support is appropriate.",
+            "benefits": "Supports comfort during eligible recovery or treatment\nRequires contraindication and interaction review\nRequires consideration of cardiac-rhythm warnings\nIs administered only under provider direction"
+          }
+        ],
+        "prolozone": [
+          {
+            "title": "Prolozone Therapy",
+            "description": "An advanced physician-directed treatment combining ozone-based therapy with targeted injections within a customized musculoskeletal and regenerative plan.",
+            "benefits": "Supports selected joint and soft-tissue goals\nComplements mobility and function planning\nMay incorporate imaging or record review\nRequires individualized physician evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Clinical",
+      "props": {
+        "id": "clinical",
+        "heading": "Good care starts with good screening.",
+        "intro": "Your provider reviews your history, medications, symptoms, hydration status, and goals before recommending a service. Essential qualification language in this section is intentionally locked."
+      }
+    },
+    {
+      "type": "Cta",
+      "props": {
+        "id": "cta",
+        "visible": true,
+        "heading": "Begin with a conversation.",
+        "description": "Tell us what you are working toward. We will help you identify the most appropriate next step.",
+        "ctaLabel": "Request a consultation",
+        "ctaHref": "#"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "id": "footer",
+        "visible": true,
+        "brandName": "Your Practice",
+        "description": "Physician-directed IV therapy, injections, PRP, and regenerative care.",
+        "phone": "(000) 000-0000",
+        "email": "hello@example.com",
+        "address": "Your street address, Your city, CA 00000",
+        "hours": "Hours by appointment",
+        "bookingLabel": "Book a consultation",
+        "bookingHref": "#book"
+      }
+    }
+  ],
+  "zones": {}
+}
