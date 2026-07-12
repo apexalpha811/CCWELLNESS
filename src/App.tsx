@@ -1,8 +1,36 @@
-import { createElement, lazy, Suspense, type ComponentType } from "react";
+import {
+  createElement,
+  lazy,
+  Suspense,
+  useEffect,
+  useState,
+  type ComponentType,
+} from "react";
 import pageDocument from "./content/page.json";
 import { pageConfig } from "./puck/config";
 
 const EditorPage = import.meta.env.DEV ? lazy(() => import("./editor/EditorPage")) : null;
+function BackToTop() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const updateVisibility = () => setVisible(window.scrollY > 520);
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", updateVisibility);
+  }, []);
+
+  return (
+    <a
+      className={`back-to-top ${visible ? "is-visible" : ""}`}
+      href="#top"
+      aria-label="Back to the beginning of the page"
+    >
+      <span>Back to top</span>
+      <span aria-hidden="true">↑</span>
+    </a>
+  );
+}
 
 type PageBlock = {
   type: keyof typeof pageConfig.components;
@@ -20,6 +48,7 @@ function PublishedPage() {
         >;
         return createElement(component, { ...block.props, key: block.props.id });
       })}
+      <BackToTop />
     </main>
   );
 }
