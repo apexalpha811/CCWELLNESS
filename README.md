@@ -1,6 +1,6 @@
-# CC Wellness Website Owner Guide
+# Culver City Wellness Website Owner Guide
 
-This folder contains the CC Wellness landing page. The website uses React, Vite, TypeScript, GSAP, and a local Puck visual editor.
+This folder contains the Culver City Wellness landing page. The website uses React, Vite, TypeScript, GSAP, and a local Puck visual editor.
 
 ## Quick start
 

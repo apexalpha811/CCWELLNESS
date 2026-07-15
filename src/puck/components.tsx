@@ -51,8 +51,8 @@ export function Navigation({
     <header className="site-nav-wrap">
       <nav className="site-nav" aria-label="Primary navigation">
         <a className="brand-mark" href="#top" aria-label={`${brandName} home`}>
-          <span className="brand-dot" />
-          {brandName}
+          <img className="brand-emblem" src="/brand/culver-city-wellness-mark.png" alt="" />
+          <span className="brand-name">{brandName}</span>
         </a>
         <div className="nav-links">
           {links.map((link) => (
@@ -438,9 +438,9 @@ export function Footer({
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <a className="brand-mark" href="#top">
-          <span className="brand-dot" />
-          {brandName}
+        <a className="brand-mark footer-brand-mark" href="#top" aria-label={`${brandName} home`}>
+          <img className="brand-emblem" src="/brand/culver-city-wellness-mark.png" alt="" />
+          <span className="brand-name">{brandName}</span>
         </a>
         <p>{description}</p>
       </div>

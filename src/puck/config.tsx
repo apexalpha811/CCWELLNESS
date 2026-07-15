@@ -74,7 +74,7 @@ export const pageConfig: Config<PageComponents> = {
       },
       defaultProps: {
         visible: true,
-        brandName: "Your Practice",
+        brandName: "Culver City Wellness",
         links: [
           { label: "IV Therapy", href: "#iv-therapy" },
           { label: "PRP", href: "#prp" },
@@ -289,7 +289,7 @@ export const pageConfig: Config<PageComponents> = {
       },
       defaultProps: {
         visible: true,
-        brandName: "Your Practice",
+        brandName: "Culver City Wellness",
         description: "Physician-directed IV therapy and regenerative care.",
         phone: "(000) 000-0000",
         email: "hello@example.com",

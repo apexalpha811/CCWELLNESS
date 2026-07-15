@@ -1,7 +1,7 @@
 {
   "root": {
     "props": {
-      "title": "Precision Recovery and Wellness"
+      "title": "Culver City Wellness"
     }
   },
   "content": [
@@ -10,7 +10,7 @@
       "props": {
         "id": "navigation",
         "visible": true,
-        "brandName": "Your Practice",
+        "brandName": "Culver City Wellness",
         "links": [
           {
             "label": "IV Therapy",
@@ -316,7 +316,7 @@
       "props": {
         "id": "footer",
         "visible": true,
-        "brandName": "Your Practice",
+        "brandName": "Culver City Wellness",
         "description": "Physician-directed IV therapy, injections, PRP, and regenerative care.",
         "phone": "(000) 000-0000",
         "email": "hello@example.com",
