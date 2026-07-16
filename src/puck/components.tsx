@@ -435,6 +435,11 @@ export function Footer({
   bookingHref,
 }: FooterProps) {
   if (!visible) return <></>;
+
+  const mapHref = `https://www.google.com/maps/search/?api=1&q=${encodeURIComponent(
+    address,
+  )}`;
+
   return (
     <footer className="site-footer">
       <div className="footer-brand">
@@ -452,7 +457,9 @@ export function Footer({
       </div>
       <div className="footer-column">
         <h3>Visit</h3>
-        <p>{address}</p>
+        <a href={mapHref} target="_blank" rel="noreferrer noopener">
+          {address}
+        </a>
         <p>{hours}</p>
       </div>
       <div className="footer-bottom">
