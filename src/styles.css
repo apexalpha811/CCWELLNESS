@@ -329,6 +329,17 @@ h3 {
   justify-self: end;
 }
 
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-self: end;
+}
+
+.nav-actions .button {
+  white-space: nowrap;
+}
+
 .hero {
   position: relative;
   display: grid;
@@ -957,6 +968,21 @@ h3 {
   z-index: 1;
 }
 
+.cta-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-actions .button {
+  position: relative;
+  z-index: 1;
+}
+
 .cta-orbit {
   position: absolute;
   width: min(72vw, 64rem);
@@ -1392,13 +1418,15 @@ h3 {
     white-space: nowrap;
   }
 
-  .site-nav > .button {
+  .site-nav > .button,
+  .nav-actions .button {
     width: auto;
     min-height: 2.75rem;
     padding-inline: 0.9rem;
   }
 
-  .site-nav > .button span {
+  .site-nav > .button span,
+  .nav-actions .button span {
     display: none;
   }
 
