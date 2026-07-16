@@ -68,11 +68,9 @@ export function Navigation({
             {ctaLabel}
             <Arrow />
           </a>
-          {callLabel && callHref ? (
-            <a className="button button-small button-light" href={callHref}>
-              {callLabel}
-            </a>
-          ) : null}
+          <a className="button button-small button-light" href={callHref}>
+            {callLabel}
+          </a>
         </div>
       </nav>
     </header>
@@ -432,11 +430,9 @@ export function Cta({
           {ctaLabel}
           <Arrow />
         </a>
-        {callLabel && callHref ? (
-          <a className="button button-dark" href={callHref}>
-            {callLabel}
-          </a>
-        ) : null}
+        <a className="button button-dark" href={callHref}>
+          {callLabel}
+        </a>
       </div>
     </section>
   );

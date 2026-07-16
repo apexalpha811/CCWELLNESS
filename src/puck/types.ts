@@ -23,6 +23,8 @@ export type NavigationProps = {
   links: LinkItem[];
   ctaLabel: string;
   ctaHref: string;
+  callLabel: string;
+  callHref: string;
 };
 
 export type HeroProps = {
@@ -92,6 +94,8 @@ export type CtaProps = {
   description: string;
   ctaLabel: string;
   ctaHref: string;
+  callLabel: string;
+  callHref: string;
 };
 
 export type FooterProps = {
