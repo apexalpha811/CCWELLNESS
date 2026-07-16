@@ -436,7 +436,7 @@ export function Footer({
 }: FooterProps) {
   if (!visible) return <></>;
 
-  const mapHref = `https://www.google.com/maps/search/?api=1&q=${encodeURIComponent(
+  const mapHref = `https://www.google.com/maps/place/${encodeURIComponent(
     address,
   )}`;
 
