@@ -44,6 +44,8 @@ export function Navigation({
   links,
   ctaLabel,
   ctaHref,
+  callLabel,
+  callHref,
 }: NavigationProps) {
   if (!visible) return <></>;
 
@@ -61,10 +63,17 @@ export function Navigation({
             </a>
           ))}
         </div>
-        <a className="button button-small button-light" href={ctaHref}>
-          {ctaLabel}
-          <Arrow />
-        </a>
+        <div className="nav-actions">
+          <a className="button button-small button-light" href={ctaHref}>
+            {ctaLabel}
+            <Arrow />
+          </a>
+          {callLabel && callHref ? (
+            <a className="button button-small button-light" href={callHref}>
+              {callLabel}
+            </a>
+          ) : null}
+        </div>
       </nav>
     </header>
   );
@@ -408,17 +417,27 @@ export function Cta({
   description,
   ctaLabel,
   ctaHref,
+  callLabel,
+  callHref,
 }: CtaProps) {
   if (!visible) return <></>;
+
   return (
     <section className="cta-section" id="book">
       <div className="cta-orbit" aria-hidden="true" />
       <h2>{heading}</h2>
       <p>{description}</p>
-      <a className="button button-dark" href={ctaHref}>
-        {ctaLabel}
-        <Arrow />
-      </a>
+      <div className="cta-actions">
+        <a className="button button-dark" href={ctaHref}>
+          {ctaLabel}
+          <Arrow />
+        </a>
+        {callLabel && callHref ? (
+          <a className="button button-dark" href={callHref}>
+            {callLabel}
+          </a>
+        ) : null}
+      </div>
     </section>
   );
 }
@@ -452,7 +471,7 @@ export function Footer({
       <div className="footer-column">
         <h3>Connect</h3>
         <a href={`tel:${phone.replace(/[^+\d]/g, "")}`}>{phone}</a>
-        <a href={`mailto:${email}`}>{email}</a>
+        <a href={`mailto:${email}?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20`}>{email}</a>
         <a href={bookingHref}>{bookingLabel}</a>
       </div>
       <div className="footer-column">

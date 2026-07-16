@@ -30,7 +30,9 @@
           }
         ],
         "ctaLabel": "Book a consultation",
-        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20"
+        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
+        "callLabel": "Call now",
+        "callHref": "tel:310-837-8808"
       }
     },
     {
@@ -159,7 +161,7 @@
             "benefits": "Supports hydration and replenishment\nProvides antioxidant support\nSupports normal metabolic wellness\nComplements a clinician-guided recovery plan"
           },
           {
-            "title": "Myers’ Cocktail",
+            "title": "Myers\u2019 Cocktail",
             "description": "A commonly requested wellness infusion that may include B vitamins, vitamin C, magnesium, and calcium when clinically appropriate.",
             "benefits": "Supports hydration and nutrient replenishment\nProvides a broad wellness formulation\nCan be adjusted through clinical review\nUses provider-selected ingredients and dosing"
           },
@@ -308,7 +310,9 @@
         "heading": "Begin with a conversation.",
         "description": "Tell us what you are working toward. We will help you identify the most appropriate next step.",
         "ctaLabel": "Request a consultation",
-        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20"
+        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
+        "callLabel": "Call now",
+        "callHref": "tel:310-837-8808"
       }
     },
     {
