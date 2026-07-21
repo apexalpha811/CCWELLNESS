@@ -185,8 +185,6 @@
         "visible": true,
         "heading": "Regenerative care, directed with precision.",
         "intro": "PRP uses a concentrated preparation derived from your own blood. Each plan is tailored to your anatomy, condition, health history, and treatment goals.",
-        "imageUrl": "https://images.pexels.com/photos/31466279/pexels-photo-31466279.jpeg?auto=compress&cs=tinysrgb&w=1400",
-        "imageAlt": "Clinician preparing a personalized regenerative treatment",
         "services": [
           {
             "title": "Joint and Mobility Therapy",

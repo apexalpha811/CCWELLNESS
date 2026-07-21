@@ -285,14 +285,7 @@ export function IvAccordion({
   );
 }
 
-export function PrpChapter({
-  visible,
-  heading,
-  intro,
-  imageUrl,
-  imageAlt,
-  services,
-}: PrpChapterProps) {
+export function PrpChapter({ visible, heading, intro, services }: PrpChapterProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
 
@@ -324,9 +317,6 @@ export function PrpChapter({
         <p className="eyebrow eyebrow-dark">Regenerative care</p>
         <h2>{heading}</h2>
         <p>{intro}</p>
-        <figure className="prp-image image-hover">
-          <img src={imageUrl} alt={imageAlt} />
-        </figure>
       </div>
       <div className="prp-list">
         {services.map((service, index) => (

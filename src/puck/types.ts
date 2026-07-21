@@ -64,8 +64,6 @@ export type PrpChapterProps = {
   visible: boolean;
   heading: string;
   intro: string;
-  imageUrl: string;
-  imageAlt: string;
   services: ServiceItem[];
 };
 
