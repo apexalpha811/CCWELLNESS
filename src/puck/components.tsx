@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -47,6 +47,35 @@ export function Navigation({
   callLabel,
   callHref,
 }: NavigationProps) {
+  const [activeHref, setActiveHref] = useState("");
+  const anchorList = links.map((link) => link.href).join(",");
+
+  useEffect(() => {
+    const sections = anchorList
+      .split(",")
+      .filter((href) => href.startsWith("#"))
+      .map((href) => document.getElementById(href.slice(1)))
+      .filter((section): section is HTMLElement => section !== null);
+
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const inView = entries.filter((entry) => entry.isIntersecting);
+        if (inView.length === 0) return;
+        const leading = inView.reduce((best, entry) =>
+          entry.intersectionRatio > best.intersectionRatio ? entry : best,
+        );
+        setActiveHref(`#${leading.target.id}`);
+      },
+      // Only count a section as current once it reaches the middle band of the viewport.
+      { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.2, 0.5, 1] },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [anchorList]);
+
   if (!visible) return <></>;
 
   return (
@@ -57,11 +86,19 @@ export function Navigation({
           <span className="brand-name">{brandName}</span>
         </a>
         <div className="nav-links">
-          {links.map((link) => (
-            <a href={link.href} key={`${link.label}-${link.href}`}>
-              {link.label}
-            </a>
-          ))}
+          {links.map((link) => {
+            const isActive = link.href === activeHref;
+            return (
+              <a
+                href={link.href}
+                key={`${link.label}-${link.href}`}
+                className={isActive ? "is-active" : undefined}
+                aria-current={isActive ? "true" : undefined}
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </div>
         <div className="nav-actions">
           <a className="button button-small button-light" href={ctaHref}>
@@ -479,7 +516,6 @@ export function Footer({
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} {brandName}</span>
-        <span>Medical services require provider assessment.</span>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700,800&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,600,700,800&f[]=switzer@400,500,600&display=swap");
 
 :root {
   --ink: #0d0f0f;
@@ -11,7 +11,7 @@
   --line-light: rgba(255, 255, 255, 0.18);
   --line-dark: rgba(13, 15, 15, 0.16);
   --font-display: "Cabinet Grotesk", "Arial Narrow", sans-serif;
-  --font-body: "Segoe UI", Arial, sans-serif;
+  --font-body: "Switzer", "Segoe UI", Arial, sans-serif;
   color: var(--ink);
   background: var(--ink);
   font-family: var(--font-body);
@@ -82,6 +82,26 @@ h3 {
   outline-offset: 4px;
 }
 
+.skip-link {
+  position: fixed;
+  z-index: 60;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.45rem;
+  color: var(--ink);
+  background: var(--ivory);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transform: translateY(calc(-100% - 2rem));
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .site-main {
   width: 100%;
   max-width: 100%;
@@ -122,6 +142,10 @@ h3 {
 
 .back-to-top:hover {
   background: var(--accent);
+}
+
+.back-to-top.is-visible:active {
+  transform: translateY(0) scale(0.96);
 }
 
 .section-dark {
@@ -207,6 +231,10 @@ h3 {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .button-small {
@@ -323,6 +351,25 @@ h3 {
 
 .nav-links a:hover {
   color: var(--ivory);
+}
+
+.nav-links a:active {
+  color: var(--accent);
+}
+
+.nav-links a.is-active {
+  position: relative;
+  color: var(--ivory);
+}
+
+.nav-links a.is-active::after {
+  position: absolute;
+  bottom: 0.45rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  content: "";
 }
 
 .site-nav > .button {

@@ -16,8 +16,21 @@ function BackToTop() {
   useEffect(() => {
     const updateVisibility = () => setVisible(window.scrollY > 520);
     updateVisibility();
-    window.addEventListener("scroll", updateVisibility, { passive: true });
-    return () => window.removeEventListener("scroll", updateVisibility);
+
+    let frame = 0;
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        frame = 0;
+        updateVisibility();
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (
@@ -41,15 +54,20 @@ function PublishedPage() {
   const blocks = pageDocument.content as unknown as PageBlock[];
 
   return (
-    <main className="site-main">
-      {blocks.map((block) => {
-        const component = pageConfig.components[block.type].render as unknown as ComponentType<
-          Record<string, unknown>
-        >;
-        return createElement(component, { ...block.props, key: block.props.id });
-      })}
-      <BackToTop />
-    </main>
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <main className="site-main" id="main">
+        {blocks.map((block) => {
+          const component = pageConfig.components[block.type].render as unknown as ComponentType<
+            Record<string, unknown>
+          >;
+          return createElement(component, { ...block.props, key: block.props.id });
+        })}
+        <BackToTop />
+      </main>
+    </>
   );
 }
 
