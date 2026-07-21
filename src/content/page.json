@@ -30,7 +30,7 @@
           }
         ],
         "ctaLabel": "Book a consultation",
-        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
+        "ctaHref": "mailto:culvercitywellness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
         "callLabel": "Call now",
         "callHref": "tel:310-837-8808"
       }
@@ -45,7 +45,7 @@
         "headlineEnd": "how you recover.",
         "description": "Personalized IV therapy, injections, and regenerative care selected around your history, goals, and current needs.",
         "primaryLabel": "Book a consultation",
-        "primaryHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
+        "primaryHref": "mailto:culvercitywellness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
         "secondaryLabel": "Explore treatments",
         "secondaryHref": "#services",
         "imageUrl": "https://images.pexels.com/photos/3952241/pexels-photo-3952241.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -308,7 +308,7 @@
         "heading": "Begin with a conversation.",
         "description": "Tell us what you are working toward. We will help you identify the most appropriate next step.",
         "ctaLabel": "Request a consultation",
-        "ctaHref": "mailto:culvercitywelness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
+        "ctaHref": "mailto:culvercitywellness@gmail.com?subject=Consultation%20request%20for%20Culver%20City%20Wellness&body=Hi%20Culver%20City%20Wellness%2C%0A%0AMy%20name%3A%20%0AMy%20phone%3A%20%0AMy%20email%3A%20%0AInterested%20service(s)%3A%20",
         "callLabel": "Call now",
         "callHref": "tel:310-837-8808"
       }
@@ -321,7 +321,7 @@
         "brandName": "Culver City Wellness",
         "description": "Physician-directed IV therapy, injections, PRP, and regenerative care.",
         "phone": "310-837-8808",
-        "email": "culvercitywelness@gmail.com",
+        "email": "culvercitywellness@gmail.com",
         "address": "3831 Hughes Ave, Suite 702, Culver City, CA 90232",
         "hours": "Hours by appointment",
         "bookingLabel": "Call now",

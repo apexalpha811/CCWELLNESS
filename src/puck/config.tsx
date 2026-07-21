@@ -296,7 +296,7 @@ export const pageConfig: Config<PageComponents> = {
         brandName: "Culver City Wellness",
         description: "Physician-directed IV therapy, injections, PRP, and regenerative care.",
         phone: "310-837-8808",
-        email: "culvercitywelness@gmail.com",
+        email: "culvercitywellness@gmail.com",
         address: "3831 Hughes Ave, Suite 702, Culver City, CA 90232",
         hours: "Hours by appointment",
         bookingLabel: "Call now",
