@@ -310,7 +310,7 @@ h3 {
 }
 
 .brand-emblem {
-  width: 2.15rem;
+  width: 2.55rem;
   height: 2.55rem;
   flex: 0 0 auto;
   object-fit: contain;
@@ -326,7 +326,7 @@ h3 {
 }
 
 .footer-brand-mark .brand-emblem {
-  width: 3rem;
+  width: 3.6rem;
   height: 3.6rem;
 }
 
@@ -1439,7 +1439,7 @@ h3 {
   }
 
   .brand-emblem {
-    width: 1.7rem;
+    width: 2.05rem;
     height: 2.05rem;
   }
 
@@ -1450,7 +1450,7 @@ h3 {
   }
 
   .footer-brand-mark .brand-emblem {
-    width: 2.35rem;
+    width: 2.85rem;
     height: 2.85rem;
   }
 
